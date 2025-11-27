@@ -36,6 +36,8 @@ while queue:
 				C += 1; I += 1
 
 				## Create new infector and pre-calculate all of their events
+				## This version finds _all_ contacts,
+				## they are tested for susceptibility when they come up in the queue
 				trans.append({"in": time, "out": []})
 				Re = beta; pInf = Re/(Re+1); delta = 1/(Re+1)
 				next = "contact" if random.random() < pInf else "recover"
