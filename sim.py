@@ -8,7 +8,7 @@ random.seed(1048)
 from collections import Counter
 
 pop = 1e5
-beta = 2
+beta = 3
 
 ## Not using I for anything, maybe don't keep track
 C = 0; I = 0

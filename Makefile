@@ -22,7 +22,7 @@ sim.Rout: sim.R
 
 ######################################################################
 
-Sources += $(wildcard *.py)
+Sources += $(wildcard *.py *.md)
 Ignore += *.out
 
 sim.out: sim.py
