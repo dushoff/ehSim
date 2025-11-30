@@ -25,10 +25,15 @@ sim.Rout: sim.R
 Sources += $(wildcard *.py *.md)
 Ignore += *.out
 
+## Inline version
 sim.out: sim.py
 	$(PITH)
 
-nofilter.out: nofilter.py
+## Function version
+simfuns.out: simfuns.py
+	$(PITH)
+
+test.out: test.py simfuns.out
 	$(PITH)
 
 ######################################################################
