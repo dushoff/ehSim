@@ -24,6 +24,7 @@ sim.Rout: sim.R
 
 Sources += $(wildcard *.py *.md)
 Ignore += *.out
+Ignore += __pycache__
 
 ## Inline version
 sim.out: sim.py
