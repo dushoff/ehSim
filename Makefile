@@ -10,6 +10,8 @@ vim_session:
 
 -include makestuff/python.def
 
+Sources += copilot.mk
+
 ######################################################################
 
 Sources += $(wildcard *.R)
@@ -34,7 +36,7 @@ sim.out: sim.py
 simfuns.out: simfuns.py
 	$(PITH)
 
-test.out: test.py simfuns.out
+test.out: test.py simfuns.py
 	$(PITH)
 
 ######################################################################
