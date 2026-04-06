@@ -1,4 +1,5 @@
 ## This is ehSim; developing new simulations for emergent heterogeneity
+## https://github.com/dushoff/ehSim
 ## 2025 Nov 27 (Thu)
 
 current: target
